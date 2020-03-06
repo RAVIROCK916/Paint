@@ -7,8 +7,7 @@ You need to run the file with a server(Visual Studio Code Terminal) or in a brow
 
 # Running in Visual Studio Code
 
-First you should have node js installed in your system.
-And then install live server 
+First you should have node js installed in your system and then install live server in the editor. 
 
 # Installing live server 
 
