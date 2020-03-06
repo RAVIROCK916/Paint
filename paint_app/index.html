@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="canvas.js" defer></script>
+
+        <title>PAINT</title>
+    </head>
+    <body>
+        <!--Left Toolbox-->
+        <div class="toolbox left">
+
+            <!--Reset Button-->
+            <div class="group commands">
+                <div class="item" data-command="reset" title="Reset">
+                    <img src="icons/reset.png" />
+                </div>
+            </div>
+
+            <!--Tools--> 
+            <div class="group tools">
+                <div class="item active" data-tool="pencil" title="Pencil Tool">
+                    <img src="icons/pencil.png" />
+                </div>
+                <div class="item" data-tool="brush" title="Brush Tool">
+                    <img src="icons/brush.png" />
+                </div>
+            </div>
+
+            <!--Shapes-->
+            <div class="group shapes">
+                <div class="item" data-tool="line" title="Line Tool">
+                    <img src="icons/line.png" />
+                </div>
+                <div class="item" data-tool="rectangle" title="Rectangle Tool">
+                    <img src="icons/rectangle.png" />
+                </div>
+                <div class="item" data-tool="circle" title="Circle Tool">
+                    <img src="icons/circle.png" />
+                </div>
+                <div class="item" data-tool="triangle" title="Triangle Tool">
+                    <img src="icons/triangle.png" />
+                </div>
+            </div>
+
+            <!--LineWidths for Pencil-->
+            <div class="group linewidths for-shapes" style="display:block;">
+                <div class="item active" data-line-width="1" title="1 Pixel">
+                    <div class="linewidth" style="width:1px; height:1px;"></div>
+                </div>
+                <div class="item" data-line-width="2" title="2 Pixel">
+                    <div class="linewidth" style="width:2px; height:2px;"></div>
+                </div>
+                <div class="item" data-line-width="3" title="3 Pixel">
+                    <div class="linewidth" style="width:3px; height:3px;"></div>
+                </div>
+                <div class="item" data-line-width="4" title="4 Pixel">
+                    <div class="linewidth" style="width:4px; height:4px;"></div>
+                </div>
+                <div class="item" data-line-width="5" title="5 Pixel">
+                    <div class="linewidth" style="width:5px; height:5px;"></div>
+                </div>
+            </div>
+
+            <!--LineWidths for Brush-->
+            <div class="group linewidths for-brush" style="display:none;">
+                <div class="item active" data-brush-size="6" title="6 Pixel">
+                    <div class="linewidth" style="width:6px; height:6px;"></div>
+                </div>
+                <div class="item" data-brush-size="8" title="8 Pixel">
+                    <div class="linewidth" style="width:8px; height:8px;"></div>
+                </div>
+                <div class="item" data-brush-size="10" title="10 Pixel">
+                    <div class="linewidth" style="width:10px; height:10px;"></div>
+                </div>
+                <div class="item" data-brush-size="12" title="12 Pixel">
+                    <div class="linewidth" style="width:12px; height:12px;"></div>
+                </div>
+                <div class="item" data-brush-size="14" title="14 Pixel">
+                    <div class="linewidth" style="width:14px; height:14px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Canvas-->
+        <canvas id="canvas" width="1300" height="700"></canvas>
+
+        <!--Right Toolbox-->
+        <div class="toolbox right">
+
+            <!--Colors-->
+            <div class = "group swatches">
+                <div class="item" data-color='#ffffff'>
+                    <div class="swatch" style="background-color:#ffffff;"></div>
+                </div>
+                <div class="item active" data-color='#000000'>
+                    <div class="swatch" style="background-color:#000000;"></div>
+                </div>
+                <div class="item" data-color='#ff0000'>
+                    <div class="swatch" style="background-color:#ff0000;"></div>
+                </div>
+                <div class="item" data-color='#228c22'>
+                    <div class="swatch" style="background-color:#228c22;"></div>
+                </div>
+                <div class="item" data-color='#0000ff'>
+                    <div class="swatch" style="background-color:#0000ff;"></div>
+                </div>
+                <div class="item" data-color='#800080'>
+                    <div class="swatch" style="background-color:#800080;"></div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
